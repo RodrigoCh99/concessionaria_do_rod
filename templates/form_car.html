@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar - Novo Carro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    body {
+
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <!--
+    Versão antiga caso algo de errado ocorra!
+    <h3>Adicionar Carro:</h3>
+        <form action="/add_car" method="post" enctype=multipart/form-data>
+            Modelo:<br>
+            <input type="text" name="modelo"><br>
+            Marca:<br>
+            <input type="text" name="marca"><br>
+            Ano:<br>
+            <input type="text" name="ano"><br>
+            Preço:<br>
+            <input type="text" name="preco"><br>
+            Imagem:<br>
+            <input type="file" name="img"><br><br>
+            <input type="submit" value="ADD">
+        </form>
+    -->
+    <section id="cover">
+        <div id="cover-caption">
+            <div id="container" class="container">
+                <div class="row text-white">
+                    <div class="col-sm-6 offset-sm-3 text-center">
+                        <h1 class="display-4"><b>Novo Veiculo</b></h1>
+                        <div class="info-form">
+                            <form action="/add_car" class="form-inlin justify-content-center" method="post" enctype=multipart/form-data>
+                                Modelo:<br>
+                                <input class="form-control" type="text" name="modelo"><br>
+                                Marca:<br>
+                                <input class="form-control" type="text" name="marca"><br>
+                                Ano:<br>
+                                <input class="form-control" type="text" name="ano"><br>
+                                Preço:<br>
+                                <input class="form-control" type="text" name="preco"><br>
+                                Imagem:<br>
+                                <input type="file" name="img"><br><br>
+                                <input type="submit" class="btn btn-secondary btn-lg active" value="Adicionar Carro">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

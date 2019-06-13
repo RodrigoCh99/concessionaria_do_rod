@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alterar-funcionario</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+        body {
+
+            background-color: black;
+
+        }
+        div {
+
+            background-color: black;
+        }
+        </style>
+    </head>
+<body>
+    <!--
+    Versão antiga caso algo de errado ocorra!
+        <h3>Alterar Funcionario:</h3>
+        <form action="/save_alter_func" method="post">
+            Novo Login do Funcionario: <input type="text" name="updated_login" value="{{ informacoes[1] }}"><br><br>
+            Nova Senha do Funcionario: <input type="text" name="updated_senha" value="{{ informacoes[2] }}"><br><br>
+            <input type="hidden" name="idfuncionario" value="{{ informacoes[0] }}">
+            <input type="submit" value="Alterar">
+        </form>
+    -->
+    <section id="cover">
+                <div id="cover-caption">
+                    <div id="container" class="container">
+                        <div class="row text-white">
+                            <div class="col-sm-6 offset-sm-3 text-center">
+                                <h1 class="display-4"><b>Alterar Funcionario</b></h1>
+                                <div class="info-form">
+                                    <form action="/save_alter_func" class="form-inlin justify-content-center" method="post">
+                                        Novo Login do Funcionario: <input class="form-control" type="text" name="updated_login" value="{{ informacoes[1] }}"><br><br>
+                                        Nova Senha do Funcionario: <input class="form-control" type="text" name="updated_senha" value="{{ informacoes[2] }}"><br><br>
+                                        <input type="hidden" name="idfuncionario" value="{{ informacoes[0] }}">
+                                        <input type="submit" class="btn btn-secondary btn-lg active" value="Alterar">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+</body>
+</html>

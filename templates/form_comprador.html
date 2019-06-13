@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Comprador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+    body {
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <!--
+    Exibir mensagem de erro, se existir
+    <form action="/save_reserva" method="post">
+            Nome:<br>
+            <input type="text" name="nome_comprador"><br>
+            CPF:<br>
+            <input type="text" name="cpf_comprador"><br>
+            <input type="hidden" name="id_carro" value="{{ id_do_carro }}">
+            <input type="submit" value="Reservar!">
+        </form>
+     -->
+<!--
+    Exibir mensagem de erro, se existir
+    -->
+
+    <section id="cover">
+        <div id="cover-caption">
+            <div id="container" class="container">
+                <div class="row text-white">
+                    <div class="col-sm-6 offset-sm-3 text-center">
+                        <h1 class="display-4"><b>Cadastre-se</b></h1>
+                        <div class="info-form">
+                            <form action="/save_reserva" class="form-inlin justify-content-center" method="post"><br>
+                                Nome:<br>
+                                <input type="text" class="form-control" name="nome_comprador"><br>
+                                CPF:<br>
+                                <input type="text" class="form-control" name="cpf_comprador"><br>
+                                <input type="hidden" name="id_carro" value="{{ id_do_carro }}">
+                                <input type="submit" class="btn btn-outline-secondary" value="Reservar!">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
